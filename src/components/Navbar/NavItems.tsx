@@ -3,11 +3,9 @@ import NAVEITEMS, { NavItem } from "../../constants/navItems";
 
 const NavItems: React.FC = () => {
 	const [selectedItem, setSelectedItem] = useState<number>(0);
-	// const navigate = useNavigate();
 
 	function navItemSelectionHandler(item: NavItem) {
 		setSelectedItem(item.id);
-		// navigate(item.name.toLowerCase());
 	}
 
 	return (
