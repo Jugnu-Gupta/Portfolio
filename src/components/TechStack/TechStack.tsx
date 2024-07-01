@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { FaLessThan } from "react-icons/fa";
-import { FaGreaterThan } from "react-icons/fa";
 import Logos from "./Logos";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,9 +13,9 @@ const TechStack: React.FC = () => {
 
 	return (
 		<div className="w-full overflow-hidden">
-			<div className="max-w-6xl mx-auto w-11/12 relative z-10 mb-4">
-				<h1 className="mt-4 flex justify-center text-primary text-3xl font-bold text-center">
-					<span className="pr-2">Tech Stack</span>
+			<div className="max-w-6xl mx-auto w-11/12 relative z-10 pb-10">
+				<h1 className="mt-8 flex justify-center text-primary text-2xl font-bold text-center">
+					<span className="pr-2">TECH STACK</span>
 				</h1>
 				<div className="h-1 rounded-full w-8 bg-primary mx-auto mb-6 mt-2"></div>
 
@@ -25,58 +23,88 @@ const TechStack: React.FC = () => {
 					<nav className="mx-auto text-sm" data-aos="zoom-in">
 						<ol className="text-dark flex xs:flex-wrap justify-center gap-6 xs:gap-3">
 							<li
-								className={`flex items-center cursor-pointer hover:text-primary 
-								${activeTab === "language" ? "text-primary" : ""}`}
+								className={`flex items-center cursor-pointer pb-[2px] font-semibold group hover:text-primary 
+								${activeTab === "language" ? "text-primary" : "text-dark"}`}
 								onClick={() => setActiveTab("language")}>
-								<FaLessThan className="text-xs" />
-								<span className="pb-[2px] font-bold">
-									LANGUAGE/
+								<span
+									className={`group-hover:opacity-100 
+										${activeTab === "language" ? "opacity-100" : "opacity-0"}`}>
+									&lt;
 								</span>
-								<FaGreaterThan className="text-xs" />
+								<span>LANGUAGE</span>
+								<span
+									className={`group-hover:opacity-100 
+										${activeTab === "language" ? "opacity-100" : "opacity-0"}`}>
+									/&gt;
+								</span>
 							</li>
 
 							<li
-								className={`flex items-center cursor-pointer hover:text-primary 
-								${activeTab === "frontend" ? "text-primary" : ""}`}
+								className={`flex items-center cursor-pointer pb-[2px] font-semibold group hover:text-primary 
+								${activeTab === "frontend" ? "text-primary" : "text-dark"}`}
 								onClick={() => setActiveTab("frontend")}>
-								<FaLessThan className="text-xs" />
-								<span className="pb-[2px] font-bold">
-									FRONTEND/
+								<span
+									className={`group-hover:opacity-100 
+										${activeTab === "frontend" ? "opacity-100" : "opacity-0"}`}>
+									&lt;
 								</span>
-								<FaGreaterThan className="text-xs" />
+								<span>FRONTEND</span>
+								<span
+									className={`group-hover:opacity-100 
+										${activeTab === "frontend" ? "opacity-100" : "opacity-0"}`}>
+									/&gt;
+								</span>
 							</li>
 
 							<li
-								className={`flex items-center cursor-pointer hover:text-primary 
-								${activeTab === "backend" ? "text-primary" : ""}`}
+								className={`flex items-center cursor-pointer pb-[2px] font-semibold group hover:text-primary 
+								${activeTab === "backend" ? "text-primary" : "text-dark"}`}
 								onClick={() => setActiveTab("backend")}>
-								<FaLessThan className="text-xs" />
-								<span className="pb-[2px] font-bold">
-									BACKEND/
+								<span
+									className={`group-hover:opacity-100 
+										${activeTab === "backend" ? "opacity-100" : "opacity-0"}`}>
+									&lt;
 								</span>
-								<FaGreaterThan className="text-xs" />
+								<span>BACKEND</span>
+								<span
+									className={`group-hover:opacity-100 
+										${activeTab === "backend" ? "opacity-100" : "opacity-0"}`}>
+									/&gt;
+								</span>
 							</li>
 
 							<li
-								className={`flex items-center cursor-pointer hover:text-primary 
-								${activeTab === "database" ? "text-primary" : ""}`}
+								className={`flex items-center cursor-pointer pb-[2px] font-semibold group hover:text-primary 
+								${activeTab === "database" ? "text-primary" : "text-dark"}`}
 								onClick={() => setActiveTab("database")}>
-								<FaLessThan className="text-xs" />
-								<span className="pb-[2px] font-bold">
-									DATABASE/
+								<span
+									className={`group-hover:opacity-100 
+										${activeTab === "database" ? "opacity-100" : "opacity-0"}`}>
+									&lt;
 								</span>
-								<FaGreaterThan className="text-xs" />
+								<span>DATABASE</span>
+								<span
+									className={`group-hover:opacity-100 
+										${activeTab === "database" ? "opacity-100" : "opacity-0"}`}>
+									/&gt;
+								</span>
 							</li>
 
 							<li
-								className={`flex items-center cursor-pointer hover:text-primary 
-								${activeTab === "tools" ? "text-primary" : ""}`}
+								className={`flex items-center cursor-pointer pb-[2px] font-semibold group hover:text-primary 
+								${activeTab === "tools" ? "text-primary" : "text-dark"}`}
 								onClick={() => setActiveTab("tools")}>
-								<FaLessThan className="text-xs" />
-								<span className="pb-[2px] font-bold">
-									TOOLS/
+								<span
+									className={`group-hover:opacity-100 
+										${activeTab === "tools" ? "opacity-100" : "opacity-0"}`}>
+									&lt;
 								</span>
-								<FaGreaterThan className="text-xs" />
+								<span>TOOLS</span>
+								<span
+									className={`group-hover:opacity-100 
+										${activeTab === "tools" ? "opacity-100" : "opacity-0"}`}>
+									/&gt;
+								</span>
 							</li>
 						</ol>
 					</nav>
@@ -104,27 +132,27 @@ const TechStack: React.FC = () => {
 							HTML5
 						</h3>
 						<h3
-							className="absolute top-56 left-10 text-lg"
+							className="absolute top-52 left-10 text-lg"
 							data-aos="fade-right">
 							Tailwind
 						</h3>
 						<h3
-							className="absolute top-72 left-1/4 text-lg"
+							className="absolute top-[272px] left-1/4 text-lg"
 							data-aos="fade-up">
 							GITHUB
 						</h3>
 						<h3
-							className="absolute top-64 left-1/2 -ml-8 text-lg"
+							className="absolute top-60 left-1/2 -ml-8 text-lg"
 							data-aos="fade-up">
 							EXPRESS
 						</h3>
 						<h3
-							className="absolute top-72 left-2/3 text-lg"
+							className="absolute top-[272px] left-2/3 text-lg"
 							data-aos="fade-up">
 							Figma
 						</h3>
 						<h3
-							className="absolute top-56 right-8 text-xl"
+							className="absolute top-52 right-8 text-xl"
 							data-aos="fade-left">
 							MongoDB
 						</h3>

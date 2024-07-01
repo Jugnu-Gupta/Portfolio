@@ -26,13 +26,13 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 		<>
 			{activeTab === "language" && (
 				<div
-					className="relative pt-28 flex items-center justify-evenly"
+					className="relative pt-28 flex items-center justify-evenly xs:gap-2 xs:justify-between"
 					data-aos="zoom-in">
 					<div className="relative animate-floating group">
 						<img
 							src={c}
 							alt="c"
-							className="w-20 h-20 hover:scale-110 transition-all duration-500"
+							className="w-[72px] hover:scale-110 transition-all duration-500"
 						/>
 						<div
 							className="absolute z-20 -top-5 left-1/2 -translate-x-1/2 bg-white rounded-md 
@@ -47,7 +47,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 						<img
 							src={cpp}
 							alt="cpp"
-							className="w-20 h-20 hover:scale-110 transition-all duration-500"
+							className="w-[72px] hover:scale-110 transition-all duration-500"
 						/>
 						<div
 							className="absolute z-20 -top-5 left-1/2 -translate-x-1/2 bg-white rounded-md 
@@ -62,7 +62,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 						<img
 							src={javascript}
 							alt="javascript"
-							className="w-20 h-20 hover:scale-110 transition-all duration-500"
+							className="w-[72px] hover:scale-110 transition-all duration-500"
 						/>
 						<div
 							className="absolute z-20 -top-5 left-1/2 -translate-x-1/2 bg-white rounded-md 
@@ -77,7 +77,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 						<img
 							src={typescript}
 							alt="typescript"
-							className="w-20 h-20 hover:scale-110 transition-all duration-500"
+							className="w-[72px] hover:scale-110 transition-all duration-500"
 						/>
 						<div
 							className="absolute z-20 -top-5 left-1/2 -translate-x-1/2 bg-white rounded-md 
@@ -92,13 +92,13 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 			)}
 			{activeTab === "frontend" && (
 				<div
-					className="relative pt-28 flex items-center justify-evenly"
+					className="relative pt-28 flex items-center justify-evenly xs:gap-2 xs:justify-between"
 					data-aos="zoom-in">
 					<div className="relative animate-floating group">
 						<img
 							src={html}
 							alt="html"
-							className="w-[72px] xs:w-16 hover:scale-110 transition-all duration-500"
+							className="w-16 xs:w-16 hover:scale-110 transition-all duration-500"
 						/>
 						<div
 							className="absolute z-20 -top-9 left-1/2 -translate-x-1/2 bg-white rounded-md 
@@ -113,7 +113,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 						<img
 							src={css}
 							alt="css"
-							className="w-[72px] xs:w-16 hover:scale-110 transition-all duration-500"
+							className="w-16 xs:w-16 hover:scale-110 transition-all duration-500"
 						/>
 						<div
 							className="absolute z-20 -top-9 left-1/2 -translate-x-1/2 bg-white rounded-md 
@@ -128,7 +128,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 						<img
 							src={react}
 							alt="react"
-							className="w-[72px] xs:w-16 hover:scale-110 transition-all duration-500"
+							className="w-16 xs:w-16 hover:scale-110 transition-all duration-500"
 						/>
 						<div
 							className="absolute z-20 -top-8 left-1/2 -translate-x-1/2 bg-white rounded-md 
@@ -143,7 +143,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 						<img
 							src={redux}
 							alt="redux"
-							className="w-[72px] xs:w-16 hover:scale-110 transition-all duration-500"
+							className="w-16 xs:w-16 hover:scale-110 transition-all duration-500"
 						/>
 						<div
 							className="absolute z-20 -top-8 left-1/2 -translate-x-1/2 bg-white rounded-md 
@@ -158,7 +158,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 						<img
 							src={tailwind}
 							alt="tailwind"
-							className="w-[72px] xs:w-16 hover:scale-110 transition-all duration-500"
+							className="w-16 xs:w-16 hover:scale-110 transition-all duration-500"
 						/>
 						<div
 							className="absolute z-20 -top-9 left-1/2 -translate-x-1/2 bg-white rounded-md 
@@ -194,7 +194,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 						<img
 							src={express}
 							alt="express"
-							className="w-[80px] py-1 hover:scale-110 transition-all duration-500"
+							className="w-[72px] py-1 hover:scale-110 transition-all duration-500"
 						/>
 						<div
 							className="absolute z-20 -top-8 left-1/2 -translate-x-1/2 bg-white rounded-md 
@@ -215,7 +215,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 						<img
 							src={mongodb}
 							alt="mongodb"
-							className="w-[72px] hover:scale-110 transition-all duration-500"
+							className="w-14 hover:scale-110 transition-all duration-500"
 						/>
 						<div
 							className="absolute z-20 -top-7 left-1/2 -translate-x-1/2 bg-white rounded-md 
@@ -245,13 +245,13 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 			)}
 			{activeTab === "tools" && (
 				<div
-					className="relative pt-28 flex items-center justify-evenly"
+					className="relative pt-28 flex items-center justify-evenly xs:gap-2 xs:justify-between"
 					data-aos="zoom-in">
 					<div className="relative animate-floating group">
 						<img
 							src={git}
 							alt="git"
-							className="w-[72px] xs:w-16 hover:scale-110 transition-all duration-500"
+							className="w-[72px] xs:w-[60px] hover:scale-110 transition-all duration-500"
 						/>
 						<div
 							className="absolute z-20 -top-8 left-1/2 -translate-x-1/2 bg-white rounded-md 
@@ -266,7 +266,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 						<img
 							src={github}
 							alt="github"
-							className="w-[72px] xs:w-16 hover:scale-110 transition-all duration-500"
+							className="w-[72px] xs:w-[60px] hover:scale-110 transition-all duration-500"
 						/>
 						<div
 							className="absolute z-20 -top-8 left-1/2 -translate-x-1/2 bg-white rounded-md 
@@ -281,7 +281,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 						<img
 							src={vscode}
 							alt="vscode"
-							className="w-[72px] xs:w-16 hover:scale-110 transition-all duration-500"
+							className="w-16 xs:w-14 hover:scale-110 transition-all duration-500"
 						/>
 						<div
 							className="absolute z-20 -top-8 left-1/2 -translate-x-1/2 bg-white rounded-md 

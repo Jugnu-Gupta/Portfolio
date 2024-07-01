@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import TechStack from "./components/TechStack/TechStack";
-import Projects from "./components/Projects";
+import Projects from "./components/Projects/Projects";
 
 function App() {
 	return (
@@ -13,7 +13,6 @@ function App() {
 			<About />
 			<TechStack />
 			<Projects />
-			<div className="h-[100vh]"></div>
 		</div>
 	);
 }

@@ -17,8 +17,8 @@ const About: React.FC = () => {
 			<div className="bg-primary">
 				<div className="max-w-6xl mx-auto w-11/12 relative z-10 mb-4">
 					<div className="text-primary absolute z-20 left-1/2 -translate-x-1/2 xs:top-[-65px] top-[-11vw]">
-						<h1 className="text-3xl font-bold">About</h1>
-						<div className="h-1 rounded-full w-4 bg-primary mx-auto"></div>
+						<h1 className="text-2xl font-bold">ABOUT</h1>
+						<div className="h-1 rounded-full w-8 bg-primary mx-auto mt-1"></div>
 					</div>
 					<div className="">
 						<img

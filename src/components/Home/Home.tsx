@@ -15,22 +15,32 @@ const Home: React.FC = () => {
 	return (
 		<div className="bg-white overflow-hidden">
 			<div className="max-w-7xl mx-auto w-11/12 flex justify-between items-center">
-				<div className="tracking-wide mt-10">
-					<p className="text-dark-light">&lt;html/&gt;</p>
-					<p className="pl-3 text-dark-light">&lt;body/&gt;</p>
-					<p className="pl-6 text-dark-light">&lt;h1&gt;</p>
-					<h1 className="pl-9 text-4xl font-semibold transition-all duration-500 ease-out hover:translate-x-5">
+				<div className="tracking-wide text-dark-light font-semibold my-36">
+					<p className="text-xs duration-300 hover:scale-110 hover:translate-x-5">
+						&lt;html&gt;
+					</p>
+					<p className="pl-3 text-xs mt-1 duration-300 hover:scale-110 hover:translate-x-5">
+						&lt;body&gt;
+					</p>
+					<p className="pl-6 text-xs mt-2 duration-300 hover:scale-110 hover:translate-x-5">
+						&lt;h1&gt;
+					</p>
+					<h1 className="pl-9 text-4xl text-dark duration-300 hover:scale-110 hover:translate-x-5">
 						Hello
 					</h1>
 
-					<h1 className="pl-9 text-4xl font-semibold transition-all duration-500 ease-out hover:translate-x-5">
+					<h1 className="pl-9 text-4xl text-dark duration-300 hover:scale-110 hover:translate-x-5">
 						<span>I'm </span>
 						<span className="text-primary"> Jugnu Gupta</span>
 					</h1>
-					<p className="pl-6 text-dark-light">&lt;/h1&gt;</p>
+					<p className="pl-6 text-xs mt-1 duration-300 hover:scale-110 hover:translate-x-5">
+						&lt;/h1&gt;
+					</p>
 
-					<p className="pl-6 text-dark-light">&lt;h3&gt;</p>
-					<h2 className="pl-9 relative overflow-hidden text-3xl font-semibold transition-all ease-out duration-500 hover:translate-x-5">
+					<p className="pl-6 text-xs mt-1 duration-300 hover:scale-110 hover:translate-x-5">
+						&lt;h3&gt;
+					</p>
+					<h2 className="pl-9 relative overflow-hidden text-3xl text-dark duration-300 hover:scale-110 hover:translate-x-5">
 						<span>I'm </span>
 						<span className="inline-block pl-1 text-primary">
 							<Typewriter
@@ -42,19 +52,23 @@ const Home: React.FC = () => {
 							/>
 						</span>
 					</h2>
-					<p className="pl-6 text-dark-light">&lt;/h3&gt;</p>
+					<p className="pl-6 text-xs mt-1 duration-300 hover:scale-110 hover:translate-x-5">
+						&lt;/h3&gt;
+					</p>
 
-					<p className="pl-6 text-dark-light">&lt;button&gt;</p>
+					<p className="pl-6 text-xs mt-1 duration-300 hover:scale-110 hover:translate-x-5">
+						&lt;button&gt;
+					</p>
 					<button
 						className="ml-9 px-4 my-4 py-1 border-2 border-primary text-primary font-semibold text-sm 
-						bg-white transition-all duration-500 ease-out hover:translate-x-5">
+						bg-white duration-300 hover:scale-110 hover:translate-x-5">
 						<a href="#">SEE MY RESUME</a>
 					</button>
 
 					<div className="pl-9 flex gap-4 my-4">
 						<a
 							href="#"
-							className="transition-all duration-500 hover:translate-x-1">
+							className="duration-300 hover:scale-110 hover:translate-x-1">
 							<img
 								src={linkedIn}
 								alt="linkedIn link"
@@ -63,18 +77,24 @@ const Home: React.FC = () => {
 						</a>
 						<a
 							href="#"
-							className="transition-all duration-500 hover:translate-x-1">
+							className="duration-300 hover:scale-110 hover:translate-x-1">
 							<img src={gmail} alt="gmail link" className="w-5" />
 						</a>
 						<a
 							href="#"
-							className="transition-all duration-500 hover:translate-x-1">
+							className="duration-300 hover:scale-110 hover:translate-x-1">
 							<IoLogoGithub className="text-xl text-dark" />
 						</a>
 					</div>
-					<p className="pl-6 text-dark-light">&lt;/button&gt;</p>
-					<p className="pl-3 text-dark-light">&lt;/body&gt;</p>
-					<p className="text-dark-light">&lt;/html&gt;</p>
+					<p className="pl-6 text-xs mt-1 duration-300 hover:scale-110 hover:translate-x-5">
+						&lt;/button&gt;
+					</p>
+					<p className="pl-3 text-xs mt-2 duration-300 hover:scale-110 hover:translate-x-5">
+						&lt;/body&gt;
+					</p>
+					<p className=" text-xs mt-1 duration-300 hover:scale-110 hover:translate-x-5">
+						&lt;/html&gt;
+					</p>
 				</div>
 
 				<Photo />

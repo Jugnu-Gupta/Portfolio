@@ -14,11 +14,11 @@ const Education: React.FC = () => {
 
 	return (
 		<div>
-			<h1 className="mt-4 flex justify-center items-center text-white text-3xl font-bold text-center">
-				<span className="pr-2">Education</span>
+			<h1 className="mt-4 flex justify-center items-center text-white text-2xl font-bold text-center">
+				<span className="pr-2">EDUCATION</span>
 				<RiGraduationCapFill />
 			</h1>
-			<div className="h-1 rounded-full w-6 bg-white mx-auto mb-6"></div>
+			<div className="h-1 rounded-full w-8 bg-white mx-auto mb-6 mt-1"></div>
 
 			<div className="flex gap-6 xs:flex-wrap sm:flex-wrap justify-center relative mb-4">
 				<div
