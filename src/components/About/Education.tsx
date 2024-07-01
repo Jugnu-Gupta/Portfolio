@@ -9,7 +9,9 @@ const Education: React.FC = () => {
 	React.useEffect(() => {
 		AOS.init({
 			duration: 500,
+			delay: 100,
 		});
+		AOS.refresh();
 	}, []);
 
 	return (

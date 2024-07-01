@@ -13,8 +13,8 @@ const position: string[] = [
 
 const Home: React.FC = () => {
 	return (
-		<div className="bg-white overflow-hidden">
-			<div className="max-w-7xl mx-auto w-11/12 flex justify-between items-center">
+		<section id="home" className="bg-white overflow-hidden">
+			<div className="max-w-6xl mx-auto w-11/12 flex justify-between items-center">
 				<div className="tracking-wide text-dark-light font-semibold my-36">
 					<p className="text-xs duration-300 hover:scale-110 hover:translate-x-5">
 						&lt;html&gt;
@@ -67,7 +67,8 @@ const Home: React.FC = () => {
 
 					<div className="pl-9 flex gap-4 my-4">
 						<a
-							href="#"
+							href="https://www.linkedin.com/in/jugnugupta33"
+							target="_blank"
 							className="duration-300 hover:scale-110 hover:translate-x-1">
 							<img
 								src={linkedIn}
@@ -76,12 +77,13 @@ const Home: React.FC = () => {
 							/>
 						</a>
 						<a
-							href="#"
+							href="mailto:jugnugupta33@gmial.com"
 							className="duration-300 hover:scale-110 hover:translate-x-1">
 							<img src={gmail} alt="gmail link" className="w-5" />
 						</a>
 						<a
-							href="#"
+							href="https://github.com/Jugnu-Gupta"
+							target="_blank"
 							className="duration-300 hover:scale-110 hover:translate-x-1">
 							<IoLogoGithub className="text-xl text-dark" />
 						</a>
@@ -99,7 +101,7 @@ const Home: React.FC = () => {
 
 				<Photo />
 			</div>
-		</div>
+		</section>
 	);
 };
 

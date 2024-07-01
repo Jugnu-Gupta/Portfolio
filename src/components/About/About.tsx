@@ -9,18 +9,27 @@ const About: React.FC = () => {
 	useEffect(() => {
 		AOS.init({
 			duration: 500,
+			delay: 100,
 		});
+		AOS.refresh();
 	});
 	return (
-		<>
-			<div className="border-t-[6vw] border-l-[100vw] border-l-primary border-t-white h-[7vw] -mb-1 mt-[8vw]"></div>
-			<div className="bg-primary">
+		<section
+			id="about"
+			className="flex flex-col items-center justify-center pt-16">
+			<div
+				className="flex flex-col items-center justify-center px-8 header"
+				data-aos="fade-in">
+				<h1 className="text-primary text-3xl font-bold mb-2 text-center tracking-wide">
+					ABOUT
+				</h1>
+				<div className="h-[0.30rem] w-10 bg-primary rounded-full mb-1"></div>
+			</div>
+			<div className="border-t-[6vw] border-l-[100vw] border-t-white border-l-primary -mb-1"></div>
+
+			<div id="about" className="bg-primary w-full">
 				<div className="max-w-6xl mx-auto w-11/12 relative z-10 mb-4">
-					<div className="text-primary absolute z-20 left-1/2 -translate-x-1/2 xs:top-[-65px] top-[-11vw]">
-						<h1 className="text-2xl font-bold">ABOUT</h1>
-						<div className="h-1 rounded-full w-8 bg-primary mx-auto mt-1"></div>
-					</div>
-					<div className="">
+					<div>
 						<img
 							src={jugnu}
 							alt=""
@@ -44,7 +53,7 @@ const About: React.FC = () => {
 				</div>
 			</div>
 			<div className="border-t-[6vw] border-l-[100vw] border-l-white border-t-primary h-[7vw] min-h-24"></div>
-		</>
+		</section>
 	);
 };
 

@@ -1,14 +1,3 @@
-interface NavItem {
-	id: number;
-	name: string;
-}
-
-const navItems: NavItem[] = [
-	{ id: 0, name: "HOME" },
-	{ id: 1, name: "ABOUT" },
-	{ id: 2, name: "PROJECTS" },
-	{ id: 3, name: "CONTACT" },
-];
 
 interface PROJECT {
     id: number;
@@ -52,5 +41,5 @@ const PROJECTS: PROJECT[] = [
     },
 ]
 
-export { navItems, PROJECTS };
-export type { NavItem,PROJECT };
+export {  PROJECTS };
+export type { PROJECT };

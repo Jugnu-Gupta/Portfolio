@@ -1,8 +1,8 @@
 import React from "react";
-import codeforces from "../../assets/codeforces.webp";
-import codechef from "../../assets/codechef.png";
-import leetcode from "../../assets/leetcode.png";
-import gfg from "../../assets/gfg.svg";
+import codeforces from "../../assets/codingProfiles/codeforces.webp";
+import codechef from "../../assets/codingProfiles/codechef.png";
+import leetcode from "../../assets/codingProfiles/leetcode.png";
+import gfg from "../../assets/codingProfiles/gfg.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -10,8 +10,11 @@ const CodingProfile: React.FC = () => {
 	React.useEffect(() => {
 		AOS.init({
 			duration: 500,
+			delay: 100,
 		});
+		AOS.refresh();
 	}, []);
+
 	return (
 		<div className="">
 			<h1 className="mt-4 flex justify-center items-center text-white text-2xl font-bold text-center">

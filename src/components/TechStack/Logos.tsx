@@ -1,21 +1,5 @@
 import React from "react";
-import c from "../../assets/c.svg";
-import cpp from "../../assets/cpp.svg";
-import javascript from "../../assets/javascript.svg";
-import typescript from "../../assets/typescript.svg";
-import html from "../../assets/html.png";
-import css from "../../assets/css.png";
-import react from "../../assets/react.png";
-import redux from "../../assets/redux.webp";
-import tailwind from "../../assets/tailwind.png";
-import nodejs from "../../assets/nodejs.png";
-import express from "../../assets/express.png";
-import mongodb from "../../assets/mongodb.png";
-import mysql from "../../assets/mysql.png";
-import git from "../../assets/git.png";
-import github from "../../assets/github.png";
-import vscode from "../../assets/vscode.png";
-import figma from "../../assets/figma.png";
+import techStackIcons from "../../assets/techStacks/index";
 
 interface LogosProps {
 	activeTab: string;
@@ -30,7 +14,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					data-aos="zoom-in">
 					<div className="relative animate-floating group">
 						<img
-							src={c}
+							src={techStackIcons.cIcon}
 							alt="c"
 							className="w-[72px] hover:scale-110 transition-all duration-500"
 						/>
@@ -45,7 +29,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					</div>
 					<div className="relative animate-floating group">
 						<img
-							src={cpp}
+							src={techStackIcons.cppIcon}
 							alt="cpp"
 							className="w-[72px] hover:scale-110 transition-all duration-500"
 						/>
@@ -60,7 +44,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					</div>
 					<div className="relative animate-floating group">
 						<img
-							src={javascript}
+							src={techStackIcons.javascriptIcon}
 							alt="javascript"
 							className="w-[72px] hover:scale-110 transition-all duration-500"
 						/>
@@ -75,7 +59,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					</div>
 					<div className="relative animate-floating group">
 						<img
-							src={typescript}
+							src={techStackIcons.typescriptIcon}
 							alt="typescript"
 							className="w-[72px] hover:scale-110 transition-all duration-500"
 						/>
@@ -96,7 +80,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					data-aos="zoom-in">
 					<div className="relative animate-floating group">
 						<img
-							src={html}
+							src={techStackIcons.htmlIcon}
 							alt="html"
 							className="w-16 xs:w-16 hover:scale-110 transition-all duration-500"
 						/>
@@ -111,7 +95,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					</div>
 					<div className="relative animate-floating group">
 						<img
-							src={css}
+							src={techStackIcons.cssIcon}
 							alt="css"
 							className="w-16 xs:w-16 hover:scale-110 transition-all duration-500"
 						/>
@@ -126,7 +110,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					</div>
 					<div className="relative animate-floating group">
 						<img
-							src={react}
+							src={techStackIcons.reactIcon}
 							alt="react"
 							className="w-16 xs:w-16 hover:scale-110 transition-all duration-500"
 						/>
@@ -141,7 +125,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					</div>
 					<div className="relative animate-floating group">
 						<img
-							src={redux}
+							src={techStackIcons.reduxIcon}
 							alt="redux"
 							className="w-16 xs:w-16 hover:scale-110 transition-all duration-500"
 						/>
@@ -156,7 +140,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					</div>
 					<div className="relative animate-floating group">
 						<img
-							src={tailwind}
+							src={techStackIcons.tailwindIcon}
 							alt="tailwind"
 							className="w-16 xs:w-16 hover:scale-110 transition-all duration-500"
 						/>
@@ -177,7 +161,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					data-aos="zoom-in">
 					<div className="relative animate-floating group">
 						<img
-							src={nodejs}
+							src={techStackIcons.nodejsIcon}
 							alt="nodejs"
 							className="w-[88px] hover:scale-110 transition-all duration-500"
 						/>
@@ -192,7 +176,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					</div>
 					<div className="relative animate-floating group">
 						<img
-							src={express}
+							src={techStackIcons.expressIcon}
 							alt="express"
 							className="w-[72px] py-1 hover:scale-110 transition-all duration-500"
 						/>
@@ -213,7 +197,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					data-aos="zoom-in">
 					<div className="relative animate-floating group">
 						<img
-							src={mongodb}
+							src={techStackIcons.mongodbIcon}
 							alt="mongodb"
 							className="w-14 hover:scale-110 transition-all duration-500"
 						/>
@@ -228,7 +212,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					</div>
 					<div className="relative animate-floating group">
 						<img
-							src={mysql}
+							src={techStackIcon.mysqlIcon}
 							alt="mysql"
 							className="w-[96px] hover:scale-110 transition-all duration-500"
 						/>
@@ -249,7 +233,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					data-aos="zoom-in">
 					<div className="relative animate-floating group">
 						<img
-							src={git}
+							src={techStackIcons.gitIcon}
 							alt="git"
 							className="w-[72px] xs:w-[60px] hover:scale-110 transition-all duration-500"
 						/>
@@ -264,7 +248,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					</div>
 					<div className="relative animate-floating group">
 						<img
-							src={github}
+							src={techStackIcons.githubIcon}
 							alt="github"
 							className="w-[72px] xs:w-[60px] hover:scale-110 transition-all duration-500"
 						/>
@@ -279,7 +263,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					</div>
 					<div className="relative animate-floating group">
 						<img
-							src={vscode}
+							src={techStackIcons.vscodeIcon}
 							alt="vscode"
 							className="w-16 xs:w-14 hover:scale-110 transition-all duration-500"
 						/>
@@ -294,7 +278,7 @@ const Logos: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 					</div>
 					<div className="relative animate-floating group">
 						<img
-							src={figma}
+							src={techStackIcons.figmaIcon}
 							alt="figma"
 							className="w-[72px] xs:w-16 hover:scale-110 transition-all duration-500"
 						/>

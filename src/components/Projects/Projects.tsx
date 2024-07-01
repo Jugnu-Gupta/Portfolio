@@ -1,11 +1,10 @@
 import React from "react";
-import { PROJECTS } from "../../constants/Constant";
-import type { PROJECT } from "../../constants/Constant";
+import { PROJECTS } from "../../constants/projects";
 import Project from "./Project";
 
 const Projects: React.FC = () => {
 	return (
-		<div className="w-full overflow-hidden mt-10">
+		<section id="projects" className="w-full overflow-hidden pt-16">
 			<div className="max-w-6xl mx-auto w-11/12 relative z-10 mb-4">
 				<h1 className="mt-4 flex justify-center text-primary text-3xl font-bold text-center">
 					<span className="pr-2">Projects</span>
@@ -14,7 +13,7 @@ const Projects: React.FC = () => {
 
 				<div>
 					<div>
-						{PROJECTS.map((project: PROJECT, index: number) => {
+						{PROJECTS.map((project, index) => {
 							return (
 								<Project
 									key={project.id}
@@ -26,7 +25,7 @@ const Projects: React.FC = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
