@@ -53,6 +53,7 @@ const Contact = () => {
 								</a>
 								<a
 									href="mailto:jugnugupta33@gmial.com"
+									target="_blank"
 									className="p-1 bg-white rounded-sm  hover:scale-110 duration-1000 hover:duration-300 active:scale-95 shadow-lg">
 									<img
 										src={gmail}
@@ -63,6 +64,7 @@ const Contact = () => {
 								</a>
 								<a
 									href="https://github.com/Jugnu-Gupta"
+									target="_blank"
 									className="p-1 bg-white rounded-sm  hover:scale-110 duration-1000 hover:duration-300 active:scale-95 shadow-lg">
 									<img
 										src={github}
@@ -74,7 +76,11 @@ const Contact = () => {
 							</div>
 							<div className="mt-4" data-aos="fade-up">
 								<button className="ml-9 px-6 my-4 py-2 text-primary font-bold text-sm bg-white">
-									<a href="#">SEE MY RESUME</a>
+									<a
+										href="https://drive.google.com/file/d/1wqy780YA6dP4N4m6gVXehAN1xSaZYpCw/view?usp=sharing"
+										target="_blank">
+										SEE MY RESUME
+									</a>
 								</button>
 							</div>
 						</div>

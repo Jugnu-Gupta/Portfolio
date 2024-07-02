@@ -7,7 +7,7 @@ import jugnu from "../../assets/jugnu.png";
 import "./home.style.css";
 
 const position: string[] = [
-	"a full stack developer.",
+	"a full-stack developer.",
 	"a DSA enthusiast.",
 	"a student.",
 ];
@@ -63,7 +63,11 @@ const Home: React.FC = () => {
 					<button
 						className="ml-9 px-4 mb-3 py-1 border-2 border-primary text-primary font-semibold text-sm 
 						bg-primaryBg duration-300 hover:scale-110 hover:translate-x-6">
-						<a href="#">SEE MY RESUME</a>
+						<a
+							href="https://drive.google.com/file/d/1wqy780YA6dP4N4m6gVXehAN1xSaZYpCw/view?usp=sharing"
+							target="_blank">
+							SEE MY RESUME
+						</a>
 					</button>
 
 					<div className="pl-9 flex gap-4">
@@ -80,6 +84,7 @@ const Home: React.FC = () => {
 						</a>
 						<a
 							href="mailto:jugnugupta33@gmial.com"
+							target="_blank"
 							className="duration-300 hover:scale-110 hover:translate-x-1">
 							<img
 								src={gmail}

@@ -30,13 +30,14 @@ const About: React.FC = () => {
 			<div id="about" className="bg-primary w-full">
 				<div className="max-w-6xl mx-auto w-11/12 relative z-10 mb-4">
 					<div>
-						<div className="bg-[#27283d] rounded-full w-48 h-48 mx-auto flex justify-center items-center">
+						<div
+							className="bg-[#27283d] rounded-full w-48 h-48 mx-auto flex justify-center items-center"
+							data-aos="fade-up">
 							<img
 								src={developer}
 								loading="lazy"
 								alt="photo of Jugnu Gupta"
 								className="w-48 rounded-full"
-								data-aos="fade-up"
 							/>
 						</div>
 						<p
