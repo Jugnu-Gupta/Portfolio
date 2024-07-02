@@ -15,6 +15,7 @@ const StarBackground: React.FC = () => {
 	useFrame((state, delta) => {
 		ref.current.rotation.x -= delta / 10;
 		ref.current.rotation.y -= delta / 15;
+		state;
 	});
 
 	return (
