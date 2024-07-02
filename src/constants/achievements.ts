@@ -22,7 +22,7 @@ const ACHIVEMENTS = [
 	{
 		id: 2,
 		title: "Codechef",
-		subTitle: "★★★,  Max Ratings 1795",
+		subTitle: "3 Star,  Max Ratings 1795",
 		description: `In the Codechef Starters 104, I secured a global rank of 35.`,
 		link: "https://www.codechef.com/users/jugnugupta33",
 		icon: ACHIEVEMENT_ICONS.codeChefIcon,

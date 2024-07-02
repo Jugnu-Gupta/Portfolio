@@ -37,7 +37,7 @@ function Achievements() {
 								className="mb-20 vertical-timeline-element--work"
 								iconClassName="shadow-md shadow-lg "
 								icon={
-									<div className="flex items-center justify-center w-full h-full bg-[#0f172a] rounded-full">
+									<div className="flex items-center justify-center w-full h-full bg-secondaryBg rounded-full">
 										<img
 											src={achieve.icon}
 											loading="lazy"

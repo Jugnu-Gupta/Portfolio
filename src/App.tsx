@@ -7,7 +7,6 @@ import Projects from "./components/Projects/Projects";
 import Achievements from "./components/Achievements/Achievements";
 import Contact from "./components/Contact";
 import StarsCanvas from "./components/StarBackground";
-import jugnu from "./assets/jugnu.png";
 
 function App() {
 	return (

@@ -73,9 +73,7 @@ const Contact = () => {
 								</a>
 							</div>
 							<div className="mt-4" data-aos="fade-up">
-								<button
-									className="ml-9 px-6 my-4 py-2 text-primary font-bold text-sm 
-									bg-white duration-300 hover:scale-110 hover:translate-x-5">
+								<button className="ml-9 px-6 my-4 py-2 text-primary font-bold text-sm bg-white">
 									<a href="#">SEE MY RESUME</a>
 								</button>
 							</div>

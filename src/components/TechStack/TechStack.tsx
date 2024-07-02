@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logos from "./Logos";
+import TechStackIcons from "./TechStackIcons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -110,55 +110,37 @@ const TechStack: React.FC = () => {
 					</nav>
 
 					{/* floating tools, frameworks, database */}
-					<div className="relative mt-20 text-dark-light font-semibold">
-						<h3
-							className="absolute top-0 left-12 text-xl"
-							data-aos="fade-right">
-							Redux
-						</h3>
-						<h3
-							className="absolute top-8 left-1/3 text-lg"
-							data-aos="fade-up">
-							CSS3
-						</h3>
-						<h3
-							className="absolute top-8 left-2/3 text-lg"
-							data-aos="fade-up">
-							Git
-						</h3>
-						<h3
-							className="absolute top-0 right-10 text-xl"
-							data-aos="fade-left">
-							HTML5
-						</h3>
-						<h3
-							className="absolute top-52 left-10 text-lg"
-							data-aos="fade-right">
-							Tailwind
-						</h3>
-						<h3
-							className="absolute top-[272px] left-1/4 text-lg"
-							data-aos="fade-up">
-							GITHUB
-						</h3>
-						<h3
-							className="absolute top-60 left-1/2 -ml-8 text-lg"
-							data-aos="fade-up">
-							EXPRESS
-						</h3>
-						<h3
-							className="absolute top-[272px] left-2/3 text-lg"
-							data-aos="fade-up">
-							Figma
-						</h3>
-						<h3
-							className="absolute top-52 right-8 text-xl"
-							data-aos="fade-left">
-							MongoDB
-						</h3>
+					<div className="relative z-20 mt-20 text-dark-light font-semibold">
+						<div className="absolute top-0 left-12 text-xl cursor-default duration-500 hover:text-primary hover:scale-110">
+							<h3 data-aos="fade-right">Redux</h3>
+						</div>
+						<div className="absolute top-8 left-1/3 text-lg cursor-default duration-500 hover:text-primary hover:scale-110">
+							<h3 data-aos="fade-up">CSS3</h3>
+						</div>
+						<div className="absolute top-8 left-2/3 text-lg cursor-default duration-500 hover:text-primary hover:scale-110">
+							<h3 data-aos="fade-up">Git</h3>
+						</div>
+						<div className="absolute top-0 right-10 text-xl cursor-default duration-500 hover:text-primary hover:scale-110">
+							<h3 data-aos="fade-left">HTML5</h3>
+						</div>
+						<div className="absolute top-52 left-10 text-lg cursor-default duration-500 hover:text-primary hover:scale-110">
+							<h3 data-aos="fade-right">Tailwind</h3>
+						</div>
+						<div className="absolute top-[272px] left-1/4 text-lg cursor-default duration-500 hover:text-primary hover:scale-110">
+							<h3 data-aos="fade-up">Github</h3>
+						</div>
+						<div className="absolute top-60 left-1/2 -ml-8 text-lg cursor-default duration-500 hover:text-primary hover:scale-110">
+							<h3 data-aos="fade-up">Express</h3>
+						</div>
+						<div className="absolute top-[272px] left-2/3 text-lg cursor-default duration-500 hover:text-primary hover:scale-110">
+							<h3 data-aos="fade-up">Figma</h3>
+						</div>
+						<div className="absolute top-52 right-8 text-xl cursor-default duration-500 hover:text-primary hover:scale-110">
+							<h3 data-aos="fade-left">MongoDB</h3>
+						</div>
 					</div>
 
-					<Logos activeTab={activeTab} />
+					<TechStackIcons activeTab={activeTab} />
 
 					{/* {activeTab === "language" && <div />} */}
 				</div>
