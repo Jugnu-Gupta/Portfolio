@@ -1,4 +1,3 @@
-import React from "react";
 import HeroContent from "./Home";
 import blackHole from "../../assets/video/blackhole.webm";
 

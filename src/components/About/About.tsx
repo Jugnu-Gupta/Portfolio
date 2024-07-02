@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import jugnu from "../../assets/jugnu.png";
 import CodingProfile from "./CodingProfile";
 import Education from "./Education";
 import developer from "../../assets/developer.jpg";
@@ -43,7 +42,7 @@ const About: React.FC = () => {
 						<p
 							className="text-center text-white max-w-xl mx-auto pt-4"
 							data-aos="fade-up">
-							Hi, My name is Jugnu Gupta. I'm a passionate
+							Hi, my name is Jugnu Gupta. I'm a passionate
 							full-stack web developer from Delhi, in India. I'm
 							currently pursuing a B.Tech in Computer Science and
 							Engineering from National Institute of Technology,
