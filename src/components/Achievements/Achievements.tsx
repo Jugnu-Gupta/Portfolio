@@ -3,9 +3,9 @@ import {
 	VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-
-import ACHIVEMENTS from "../constants/achievements";
+import ACHIVEMENTS from "../../constants/achievements";
 import { twMerge } from "tailwind-merge";
+import "./achievement.style.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -27,7 +27,7 @@ function Achievements() {
 			</div>
 			<div className="my-12">
 				<VerticalTimeline
-					lineColor="#05cbf7"
+					lineColor="#0078e1"
 					className="pt-16 "
 					animate={true}>
 					{ACHIVEMENTS.map((achieve, index) => {
@@ -37,10 +37,11 @@ function Achievements() {
 								className="mb-20 vertical-timeline-element--work"
 								iconClassName="shadow-md shadow-lg "
 								icon={
-									<div className="flex items-center justify-center w-full h-full bg-white rounded-full">
+									<div className="flex items-center justify-center w-full h-full bg-[#0f172a] rounded-full">
 										<img
 											src={achieve.icon}
-											className="object-center w-7 lgm:w-9 aspect-square"
+											loading="lazy"
+											className="object-center w-7 lgm:w-9 aspect-square rounded-full"
 										/>
 									</div>
 								}
@@ -58,13 +59,13 @@ function Achievements() {
 									{achieve.date}
 								</h3>
 								<div className="mb-2">
-									<h1 className="text-primary font-semibold text-xl tracking-wide">
+									<h1 className="text-primary font-bold text-xl tracking-wide">
 										{achieve.title}
 									</h1>
 									<h4 className="text-primary font-semibold text-sm tracking-wide">
 										{achieve.subTitle}
 									</h4>
-									<p className="text-dark-light whitespace-pre-wrap ">
+									<p className="text-dark-lighter whitespace-pre-wrap ">
 										{achieve.description}
 									</p>
 									<button

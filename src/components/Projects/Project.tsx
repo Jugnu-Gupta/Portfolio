@@ -44,7 +44,12 @@ const Project: React.FC<ProjectProps> = ({ project, index }: ProjectProps) => {
 				<div
 					className={`flex items-center  gap-4 xs:justify-center sm:justify-center
                 ${index % 2 == 1 ? "justify-end" : "justify-start"}`}>
-					<img src={project.logoUrl} alt="" className="w-12" />
+					<img
+						src={project.logoUrl}
+						loading="lazy"
+						alt=""
+						className="w-12"
+					/>
 					<h1 className="text-lg font-semibold text-dark">
 						{project.name}
 					</h1>
@@ -88,6 +93,7 @@ const Project: React.FC<ProjectProps> = ({ project, index }: ProjectProps) => {
 			}`}>
 				<img
 					src={project.websiteImgUrl}
+					loading="lazy"
 					alt="Project website image"
 					className="rounded-lg shadow-lg"
 				/>

@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: {
+      backdropBlur: ['responsive'],
       screens: {
         'xs': {
           'min': '0px', 'max': '640px'
@@ -15,7 +16,8 @@ export default {
         },
       },
       colors: {
-        'primary': '#05cbf7',
+        'primary': '#0078e1',
+        'primaryBg': '#030014',
         'secondary': '#fff',
         'dark': '#000',
         'dark-light': '#6a7280',

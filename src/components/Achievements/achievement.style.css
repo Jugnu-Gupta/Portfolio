@@ -1,0 +1,8 @@
+.vertical-timeline-element-content {
+	background-color: #0f172a;
+	display: flex;
+	align-items: center;
+}
+.vertical-timeline-element-content-arrow {
+	border-right-color: #0f172a;
+}

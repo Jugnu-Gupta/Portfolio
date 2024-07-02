@@ -31,15 +31,15 @@ const Hamburger: React.FC = () => {
 				<div className="relative">
 					<button type="submit" name="menu" onClick={showMenuHandler}>
 						{showMenu ? (
-							<RxCross2 className="text-2xl font-bold" />
+							<RxCross2 className="text-2xl font-bold text-white" />
 						) : (
-							<RxHamburgerMenu className="text-2xl font-bold" />
+							<RxHamburgerMenu className="text-2xl font-bold text-white" />
 						)}
 					</button>
 
 					<div
 						ref={hamburgerMenu}
-						className="absolute z-10 top-[46px] w-[100vw] -right-[8vw] bg-white hidden
+						className="absolute z-50 top-[46px] w-[100vw] -right-[4vw] hidden bg-[#020617]
 							shadow-xl px-[8vw] pb-4 flex flex-col gap-4 items-center animate-right">
 						<div className="h-[1px] bg-dark-light w-full"></div>
 						<NavItems />

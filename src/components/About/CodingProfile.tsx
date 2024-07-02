@@ -27,16 +27,36 @@ const CodingProfile: React.FC = () => {
 				className="bg-white flex justify-between items-center max-w-[260px] mx-auto mb-10 px-4 py-2 rounded-sm"
 				data-aos="fade-up">
 				<a href="#" target="_blank">
-					<img src={codeforces} alt="" className="w-8 h-8" />
+					<img
+						src={codeforces}
+						loading="lazy"
+						alt="codeforces"
+						className="w-8 h-8"
+					/>
 				</a>
 				<a href="#" target="_blank">
-					<img src={codechef} alt="" className="w-8 h-8" />
+					<img
+						src={codechef}
+						loading="lazy"
+						alt="codechef"
+						className="w-8 h-8"
+					/>
 				</a>
 				<a href="#" target="_blank">
-					<img src={leetcode} alt="" className="w-8 h-8" />
+					<img
+						src={leetcode}
+						loading="lazy"
+						alt="leetcode"
+						className="w-8 h-8"
+					/>
 				</a>
 				<a href="#" target="_blank">
-					<img src={gfg} alt="" className="w-8 h-8" />
+					<img
+						src={gfg}
+						loading="lazy"
+						alt="gfg"
+						className="w-8 h-8"
+					/>
 				</a>
 			</div>
 		</div>

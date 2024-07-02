@@ -28,6 +28,7 @@ const Education: React.FC = () => {
 					data-aos="fade-right">
 					<img
 						src={NITD}
+						loading="lazy"
 						alt="NIT Delhi Logo"
 						className="bg-white p-1 rounded-full w-16 h-16"
 					/>
@@ -47,6 +48,7 @@ const Education: React.FC = () => {
 					data-aos="fade-left">
 					<img
 						src={OPS}
+						loading="lazy"
 						alt="NIT Delhi Logo"
 						className="bg-white p-1 rounded-full w-16 h-16"
 					/>

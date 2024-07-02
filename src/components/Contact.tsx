@@ -1,11 +1,9 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useEffect } from "react";
-// import { Link } from "react-router-dom";
-import { twMerge } from "tailwind-merge";
 import linkedIn from "../assets/linkedin.png";
 import gmail from "../assets/gmail.png";
 import github from "../assets/github.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
 	useEffect(() => {
@@ -26,7 +24,7 @@ const Contact = () => {
 				<div className="h-[0.30rem] w-10 bg-primary rounded-full mb-1"></div>
 			</div>
 
-			<div className="border-t-[6vw] border-l-[100vw] border-t-white border-l-primary -mb-1"></div>
+			<div className="border-t-[6vw] border-l-[100vw] border-t-primaryBg border-l-primary -mb-1"></div>
 
 			<div className="bg-primary w-full">
 				<div className="max-w-6xl mx-auto w-11/12 py-8 lg:py-16 relative ">
@@ -48,6 +46,7 @@ const Contact = () => {
 									className="p-1 bg-white rounded-sm  hover:scale-110 duration-1000 hover:duration-300 active:scale-95 shadow-lg">
 									<img
 										src={linkedIn}
+										loading="lazy"
 										className="w-8"
 										alt="LinkedIn"
 									/>
@@ -57,6 +56,7 @@ const Contact = () => {
 									className="p-1 bg-white rounded-sm  hover:scale-110 duration-1000 hover:duration-300 active:scale-95 shadow-lg">
 									<img
 										src={gmail}
+										loading="lazy"
 										className="w-8"
 										alt="LinkedIn"
 									/>
@@ -66,6 +66,7 @@ const Contact = () => {
 									className="p-1 bg-white rounded-sm  hover:scale-110 duration-1000 hover:duration-300 active:scale-95 shadow-lg">
 									<img
 										src={github}
+										loading="lazy"
 										className="w-8"
 										alt="LinkedIn"
 									/>

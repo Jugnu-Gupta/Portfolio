@@ -21,10 +21,10 @@ const TechStack: React.FC = () => {
 
 				<div className="mb-32">
 					<nav className="mx-auto text-sm" data-aos="zoom-in">
-						<ol className="text-dark flex xs:flex-wrap justify-center gap-6 xs:gap-3">
+						<ol className="text-dark-lighter flex xs:flex-wrap justify-center gap-6 xs:gap-3">
 							<li
 								className={`flex items-center cursor-pointer pb-[2px] font-semibold group hover:text-primary 
-								${activeTab === "language" ? "text-primary" : "text-dark"}`}
+								${activeTab === "language" ? "text-primary" : ""}`}
 								onClick={() => setActiveTab("language")}>
 								<span
 									className={`group-hover:opacity-100 
@@ -41,7 +41,7 @@ const TechStack: React.FC = () => {
 
 							<li
 								className={`flex items-center cursor-pointer pb-[2px] font-semibold group hover:text-primary 
-								${activeTab === "frontend" ? "text-primary" : "text-dark"}`}
+								${activeTab === "frontend" ? "text-primary" : ""}`}
 								onClick={() => setActiveTab("frontend")}>
 								<span
 									className={`group-hover:opacity-100 
@@ -58,7 +58,7 @@ const TechStack: React.FC = () => {
 
 							<li
 								className={`flex items-center cursor-pointer pb-[2px] font-semibold group hover:text-primary 
-								${activeTab === "backend" ? "text-primary" : "text-dark"}`}
+								${activeTab === "backend" ? "text-primary" : ""}`}
 								onClick={() => setActiveTab("backend")}>
 								<span
 									className={`group-hover:opacity-100 
@@ -75,7 +75,7 @@ const TechStack: React.FC = () => {
 
 							<li
 								className={`flex items-center cursor-pointer pb-[2px] font-semibold group hover:text-primary 
-								${activeTab === "database" ? "text-primary" : "text-dark"}`}
+								${activeTab === "database" ? "text-primary" : ""}`}
 								onClick={() => setActiveTab("database")}>
 								<span
 									className={`group-hover:opacity-100 
@@ -92,7 +92,7 @@ const TechStack: React.FC = () => {
 
 							<li
 								className={`flex items-center cursor-pointer pb-[2px] font-semibold group hover:text-primary 
-								${activeTab === "tools" ? "text-primary" : "text-dark"}`}
+								${activeTab === "tools" ? "text-primary" : ""}`}
 								onClick={() => setActiveTab("tools")}>
 								<span
 									className={`group-hover:opacity-100 
@@ -110,7 +110,7 @@ const TechStack: React.FC = () => {
 					</nav>
 
 					{/* floating tools, frameworks, database */}
-					<div className="relative mt-20 text-dark-lighter font-semibold">
+					<div className="relative mt-20 text-dark-light font-semibold">
 						<h3
 							className="absolute top-0 left-12 text-xl"
 							data-aos="fade-right">

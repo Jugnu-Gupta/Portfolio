@@ -1,12 +1,8 @@
 import React, { useState } from "react";
-import NAVEITEMS, { NavItem } from "../../constants/navItems";
+import NAVEITEMS from "../../constants/navItems";
 
 const NavItems: React.FC = () => {
 	const [selectedItem, setSelectedItem] = useState<number>(0);
-
-	function navItemSelectionHandler(item: NavItem) {
-		setSelectedItem(item.id);
-	}
 
 	return (
 		<>
@@ -15,9 +11,9 @@ const NavItems: React.FC = () => {
 					<a href={"#" + item.name.toLowerCase()}>
 						<h1
 							key={item.id}
-							onClick={() => navItemSelectionHandler(item)}
+							onClick={() => setSelectedItem(item.id)}
 							className={`text-sm font-bold flex items-center cursor-pointer group hover:text-primary 
-						${item.id === selectedItem ? "text-primary" : "text-dark"}`}>
+						${item.id === selectedItem ? "text-primary" : "text-white"}`}>
 							<span
 								className={`group-hover:opacity-100 text-base -mr-[2px] 
 							${item.id === selectedItem ? "opacity-100" : "opacity-0"}`}>

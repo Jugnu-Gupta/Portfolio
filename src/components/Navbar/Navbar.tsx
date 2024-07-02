@@ -5,7 +5,7 @@ import Hamburger from "./Hamburger";
 
 const Navbar: React.FC = () => {
 	return (
-		<div className="bg-white shadow-lg w-full fixed z-30">
+		<div className="shadow-lg w-full fixed backdrop-blur-lg bg-[#020617] z-40">
 			<nav className="max-w-6xl mx-auto w-11/12 flex justify-between h-16 items-center">
 				<div className="flex gap-3">
 					<h1 className="text-primary text-lg font-bold flex items-center">
@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
 						<span>J/</span>
 						<FaGreaterThan className="text-xs" />
 					</h1>
-					<h1 className="text-base text-dark font-bold">
+					<h1 className="text-base text-white font-bold">
 						JUGNU GUPTA
 					</h1>
 				</div>
