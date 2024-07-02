@@ -39,7 +39,7 @@ const Hamburger: React.FC = () => {
 
 					<div
 						ref={hamburgerMenu}
-						className="absolute z-50 top-[46px] w-[100vw] -right-[4vw] hidden bg-[#020617]
+						className="absolute z-50 top-[46px] w-[100vw] -right-[4vw] hidden bg-secondaryDarkBg
 							shadow-xl px-[8vw] pb-4 flex flex-col gap-4 items-center animate-right">
 						<div className="h-[1px] bg-dark-light w-full"></div>
 						<NavItems />

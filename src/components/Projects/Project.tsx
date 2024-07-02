@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
+import "./project.style.css";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -38,11 +39,11 @@ const Project: React.FC<ProjectProps> = ({ project, index }: ProjectProps) => {
 			data-aos={animate}>
 			<div
 				className={twMerge(
-					"flex flex-col w-2/5 relative z-20 bg-white xs:shadow-lg sm:shadow-lg xs:rounded-lg sm:rounded-lg xs:py-4 sm:py-4 xs:px-6 sm:px-6 xs:w-5/6 sm:w-5/6",
+					"flex flex-col w-2/5 relative z-20 xs:bg-secondaryBg sm:bg-secondaryBg xs:shadow-lg sm:shadow-lg xs:rounded-lg sm:rounded-lg xs:py-4 sm:py-4 xs:px-6 sm:px-6 xs:w-5/6 sm:w-5/6",
 					index % 2 == 1 ? "pr-8" : "pl-8"
 				)}>
 				<div
-					className={`flex items-center  gap-4 xs:justify-center sm:justify-center
+					className={`flex items-center pb-2  gap-4 xs:justify-center sm:justify-center
                 ${index % 2 == 1 ? "justify-end" : "justify-start"}`}>
 					<img
 						src={project.logoUrl}
@@ -50,7 +51,7 @@ const Project: React.FC<ProjectProps> = ({ project, index }: ProjectProps) => {
 						alt=""
 						className="w-12"
 					/>
-					<h1 className="text-lg font-semibold text-dark">
+					<h1 className="text-lg font-semibold text-white">
 						{project.name}
 					</h1>
 				</div>
@@ -58,13 +59,17 @@ const Project: React.FC<ProjectProps> = ({ project, index }: ProjectProps) => {
 					spaceBetween={30}
 					pagination={{ clickable: true }}
 					modules={[Pagination]}
-					className="w-full px-4 pt-4 pb-8 rounded-lg shadow-lg bg-white xs:shadow-none sm:shadow-none text-sm text-dark-light xs:px-0 sm:px-0">
+					className="w-full px-4 pt-4 pb-8 rounded-lg shadow-lg bg-secondaryBg xs:shadow-none sm:shadow-none text-sm text-dark-light xs:px-0 sm:px-0">
 					{project.description.map((desc: string, index: number) => {
 						return <SwiperSlide key={index}>{desc}</SwiperSlide>;
 					})}
 				</Swiper>
 
-				<div className="flex gap-4 text-dark-light pt-3 pb-2">
+				<div
+					className={twMerge(
+						"flex gap-4 text-dark-lighter pt-3 pb-2 xs:justify-center sm:justify-center",
+						index % 2 === 1 ? "justify-end" : "justify-start"
+					)}>
 					{project.technologies.map((tech: string, index: number) => {
 						return (
 							<p
@@ -75,7 +80,11 @@ const Project: React.FC<ProjectProps> = ({ project, index }: ProjectProps) => {
 						);
 					})}
 				</div>
-				<div className="flex gap-4 text-dark-light">
+				<div
+					className={twMerge(
+						"flex gap-4 text-dark-lighter xs:justify-center sm:justify-center",
+						index % 2 === 1 ? "justify-end" : "justify-start"
+					)}>
 					<a href={project.githubUrl} target="_blank">
 						<FiGithub className="hover:text-primary hover:scale-110" />
 					</a>

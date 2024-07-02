@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import jugnu from "../../assets/jugnu.png";
 import CodingProfile from "./CodingProfile";
 import Education from "./Education";
+import developer from "../../assets/developer.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -16,7 +17,7 @@ const About: React.FC = () => {
 	return (
 		<section
 			id="about"
-			className="flex flex-col items-center justify-center pt-16">
+			className="flex flex-col items-center justify-center pt-[58px] relative z-10">
 			<div
 				className="flex flex-col items-center justify-center px-8 header"
 				data-aos="fade-in">
@@ -30,19 +31,21 @@ const About: React.FC = () => {
 			<div id="about" className="bg-primary w-full">
 				<div className="max-w-6xl mx-auto w-11/12 relative z-10 mb-4">
 					<div>
-						<img
-							src={jugnu}
-							loading="lazy"
-							alt="photo of Jugnu Gupta"
-							className="w-40 mx-auto rounded-full"
-							data-aos="fade-up"
-						/>
+						<div className="bg-[#27283d] rounded-full w-48 h-48 mx-auto flex justify-center items-center">
+							<img
+								src={developer}
+								loading="lazy"
+								alt="photo of Jugnu Gupta"
+								className="w-48 rounded-full"
+								data-aos="fade-up"
+							/>
+						</div>
 						<p
 							className="text-center text-white max-w-xl mx-auto pt-4"
 							data-aos="fade-up">
-							Hi, I'm Jugnu Gupta. I'm a passionate full-stack web
-							developer from Delhi, in India. I'm currently
-							pursuing a B.Tech in Computer Science and
+							Hi, My name is Jugnu Gupta. I'm a passionate
+							full-stack web developer from Delhi, in India. I'm
+							currently pursuing a B.Tech in Computer Science and
 							Engineering from National Institute of Technology,
 							Delhi.
 						</p>

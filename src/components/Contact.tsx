@@ -14,7 +14,7 @@ const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className="flex flex-col items-center justify-center pt-24">
+			className="flex flex-col items-center justify-center pt-24 relative z-10">
 			<div
 				className="flex flex-col items-center justify-center px-8 header"
 				data-aos="fade-in">
@@ -91,6 +91,9 @@ const Contact = () => {
 						</div>
 					</div>
 				</div>
+			</div>
+			<div className="bg-secondaryDarkBg w-full h-14 text-white flex justify-center items-center">
+				<p>Copyright © Jugnu Gupta 2024 All Right Reserved.</p>
 			</div>
 		</section>
 	);

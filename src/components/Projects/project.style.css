@@ -1,0 +1,7 @@
+.swiper-pagination-bullet {
+	background-color: #d1d5db; /* Default dot color */
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #0078e1; /* Active dot color */
+}

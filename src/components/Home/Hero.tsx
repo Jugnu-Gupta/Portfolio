@@ -4,7 +4,9 @@ import blackHole from "../../assets/video/blackhole.webm";
 
 const Hero = () => {
 	return (
-		<div className="relative flex flex-col h-full w-full" id="about-me">
+		<div
+			className="relative top-10 flex flex-col h-full w-full"
+			id="about-me">
 			<video
 				autoPlay
 				muted
