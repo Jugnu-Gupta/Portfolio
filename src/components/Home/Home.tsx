@@ -17,31 +17,31 @@ const Home: React.FC = () => {
 		<section id="home" className="overflow-hidden h-full relative z-10">
 			<div className="max-w-6xl mx-auto w-11/12 flex justify-between items-center relative">
 				<div className="tracking-wide text-dark-light font-semibold mt-48 mb-28 w-full">
-					<p className="text-xs duration-300 hover:scale-110 hover:translate-x-8">
+					<p className="text-xs duration-300 hover:scale-110 hover:translate-x-5 w-fit">
 						&lt;html&gt;
 					</p>
-					<p className="pl-3 text-xs mt-2 duration-300 hover:scale-110 hover:translate-x-8">
+					<p className="pl-3 text-xs mt-2 duration-300 hover:scale-110 hover:translate-x-5 w-fit">
 						&lt;body&gt;
 					</p>
-					<p className="pl-6 text-xs mt-4 mb-1 duration-300 hover:scale-110 hover:translate-x-8">
+					<p className="pl-6 text-xs mt-4 mb-1 duration-300 hover:scale-110 hover:translate-x-5 w-fit">
 						&lt;h1&gt;
 					</p>
-					<h1 className="pl-9 text-4xl text-white duration-300 hover:scale-110 hover:translate-x-8">
+					<h1 className="pl-9 text-4xl text-white duration-300 hover:scale-110 hover:translate-x-5 w-fit">
 						Hello
 					</h1>
 
-					<h1 className="pl-9 text-4xl text-white text-nowrap duration-300 hover:scale-110 hover:translate-x-8">
+					<h1 className="pl-9 text-4xl text-white text-nowrap duration-300 hover:scale-110 hover:translate-x-5 w-fit">
 						<span>I'm </span>
 						<span className="text-primary"> Jugnu Gupta</span>
 					</h1>
-					<p className="pl-6 text-xs mt-1 duration-300 hover:scale-110 hover:translate-x-8">
+					<p className="pl-6 text-xs mt-1 duration-300 hover:scale-110 hover:translate-x-5 w-fit">
 						&lt;/h1&gt;
 					</p>
 
-					<p className="pl-6 text-xs mt-2 mb-1 duration-300 hover:scale-110 hover:translate-x-8">
+					<p className="pl-6 text-xs mt-2 mb-1 duration-300 hover:scale-110 hover:translate-x-5 w-fit">
 						&lt;h3&gt;
 					</p>
-					<h2 className="pl-9 relative overflow-hidden text-3xl text-nowrap text-white duration-300 hover:scale-110 hover:translate-x-8">
+					<h2 className="pl-9 relative overflow-hidden text-3xl text-nowrap text-white duration-300 hover:scale-110 hover:translate-x-8 w-fit">
 						<span>I'm </span>
 						<span className="inline-block pl-1 text-primary">
 							<Typewriter
@@ -53,16 +53,16 @@ const Home: React.FC = () => {
 							/>
 						</span>
 					</h2>
-					<p className="pl-6 text-xs mt-1 duration-300 hover:scale-110 hover:translate-x-8">
+					<p className="pl-6 text-xs mt-1 duration-300 hover:scale-110 hover:translate-x-5 w-fit">
 						&lt;/h3&gt;
 					</p>
 
-					<p className="pl-6 text-xs mt-2 mb-2 duration-300 hover:scale-110 hover:translate-x-8">
+					<p className="pl-6 text-xs mt-2 mb-2 duration-300 hover:scale-110 hover:translate-x-5 w-fit">
 						&lt;button&gt;
 					</p>
 					<button
 						className="ml-9 px-4 mb-3 py-1 border-2 border-primary text-primary font-semibold text-sm 
-						bg-primaryBg duration-300 hover:scale-110 hover:translate-x-6">
+						bg-primaryBg duration-300 hover:scale-110 hover:translate-x-5">
 						<a
 							href="https://drive.google.com/file/d/1wqy780YA6dP4N4m6gVXehAN1xSaZYpCw/view?usp=sharing"
 							target="_blank">
@@ -100,13 +100,13 @@ const Home: React.FC = () => {
 							<IoLogoGithub className="text-xl text-white" />
 						</a>
 					</div>
-					<p className="pl-6 text-xs mt-2 duration-300 hover:scale-110 hover:translate-x-8">
+					<p className="pl-6 text-xs mt-2 duration-300 hover:scale-110 hover:translate-x-5 w-fit">
 						&lt;/button&gt;
 					</p>
-					<p className="pl-3 text-xs mt-4 duration-300 hover:scale-110 hover:translate-x-8">
+					<p className="pl-3 text-xs mt-4 duration-300 hover:scale-110 hover:translate-x-5 w-fit">
 						&lt;/body&gt;
 					</p>
-					<p className=" text-xs mt-2 duration-300 hover:scale-110 hover:translate-x-8">
+					<p className=" text-xs mt-2 duration-300 hover:scale-110 hover:translate-x-5 w-fit">
 						&lt;/html&gt;
 					</p>
 				</div>
