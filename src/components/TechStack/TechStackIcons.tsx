@@ -189,7 +189,7 @@ const TechStackIcons: React.FC<LogosProps> = ({ activeTab }: LogosProps) => {
 							src={techStackIcons.expressIcon}
 							loading="lazy"
 							alt="express"
-							className="w-[72px] py-1 hover:scale-110 transition-all duration-500"
+							className="w-28 py-1 hover:scale-110 transition-all duration-500"
 						/>
 						<div
 							className="absolute z-20 -top-8 left-1/2 -translate-x-1/2 bg-secondaryBg rounded-md 
