@@ -59,7 +59,7 @@ const Project: React.FC<ProjectProps> = ({ project, index }: ProjectProps) => {
 					spaceBetween={30}
 					pagination={{ clickable: true }}
 					modules={[Pagination]}
-					className="w-full px-4 pt-4 pb-8 rounded-lg shadow-lg bg-secondaryBg xs:shadow-none sm:shadow-none text-sm text-dark-light xs:px-0 sm:px-0">
+					className="w-full px-4 pt-4 pb-8 rounded-lg shadow-lg bg-secondaryBg xs:shadow-none sm:shadow-none text-sm text-dark-lighter xs:px-0 sm:px-0">
 					{project.description.map((desc: string, index: number) => {
 						return <SwiperSlide key={index}>{desc}</SwiperSlide>;
 					})}

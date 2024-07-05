@@ -61,7 +61,7 @@ const CodingProfile: React.FC = () => {
 						<div
 							className="absolute left-1/2 -top-2 transform -translate-x-1/2 bottom-[-8px] h-0 w-0 
 								border-x-[8px] border-x-transparent border-b-[8px] border-b-secondaryBg"></div>
-						<span>Codechef: 3 Star, Max Rating: 1795</span>
+						<span>Codechef: 4 Star, Max Rating: 1829</span>
 					</div>
 				</a>
 				<a
