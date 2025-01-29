@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 import { IoLogoGithub } from "react-icons/io";
 import linkedIn from "../../assets/linkedin.png";
 import gmail from "../../assets/gmail.png";
-import jugnu from "../../assets/jugnu.png";
+import jugnu from "../../assets/jugnu.jpeg";
 import "./home.style.css";
 
 const position: string[] = [
